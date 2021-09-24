@@ -1,2 +1,2 @@
 # Discord Bot
- 
+ Basic Template
