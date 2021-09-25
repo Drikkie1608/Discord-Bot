@@ -11,9 +11,9 @@ import time
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
 # loading all cogs
-for filename in os.listdir("./cogs"):
+for filename in os.listdir("./extensions"):
     if filename.endswith(".py") and filename != "__init__.py":
-        bot.load_extension(f'cogs.{filename[:-3]}')
+        bot.load_extension(f'extensions.{filename[:-3]}')
 
 # bot is online
 @bot.event
